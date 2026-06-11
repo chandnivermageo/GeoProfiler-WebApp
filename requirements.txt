@@ -7,4 +7,3 @@ rasterio
 geopandas
 shapely
 pyproj
-fiona
