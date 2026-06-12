@@ -1,12 +1,12 @@
 # GeoProfiler
 
-*Open-source web application for extracting and visualizing topographic profiles from Digital Elevation Models (DEMs).*
+*Open-source geospatial web application for extracting and visualizing topographic profiles from Digital Elevation Models (DEMs).*
 
-GeoProfiler is an open-source web application designed for extracting and visualizing topographic profiles from Digital Elevation Models (DEMs).
+GeoProfiler enables rapid extraction and visualization of topographic **line** and **swath** profiles through an user-friendly web interface. The application integrates DEM visualization, hillshade rendering, terrain analysis, and exportable profile outputs within a single workflow.
 
-The application supports both **line** and **swath profile** generation and provides profile exports in **PNG, PDF, and CSV** formats for further analysis and reporting.
+## Live Demo
 
-GeoProfiler integrates **DEM visualization**, **hillshade rendering**, **profile extraction**, and **data export** within a single workflow.
+🌐 **[GeoProfiler Web App](https://geoprofiler.streamlit.app)**
 
 The application was developed to streamline the extraction and visualization of topographic profiles, reducing repetitive manual processing when working with multiple profile lines and large terrain datasets.
 
@@ -17,8 +17,28 @@ The application was developed to streamline the extraction and visualization of 
 * DEM visualization with hillshade
 * Line profile generation
 * Swath profile generation
+* Shapefile and GeoJSON support
 * Automatic vector reprojection
 * PNG, PDF, and CSV exports
+
+---
+
+## Sample Dataset
+
+A ready-to-use sample dataset is provided in `/sample_data`.
+
+Includes:
+- sample_dem.tif (~17 MB DEM raster)
+- rivers.json (GeoJSON river profiles)
+- River shapefile components
+- Cross-section shapefile components
+
+### Quick Test
+
+1. Upload `sample_dem.tif`
+2. Upload `rivers.json` or the river shapefile
+3. Generate line or swath profiles
+4. Export results for further analysis
 
 ---
 
