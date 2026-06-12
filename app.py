@@ -145,9 +145,9 @@ if dem_file is not None:
         st.session_state["run_profile"] = False
         st.session_state["last_dem"] = dem_file.name
 
-# SHAPEFILE UPLOAD
+# VECTOR DATA UPLOAD
 shape_files = st.sidebar.file_uploader(
-    "Upload Shapefile Components",
+    "Upload Shapefile or GeoJSON",
     type=["shp", "shx", "dbf", "prj", "geojson", "json"],
     accept_multiple_files=True
 )
