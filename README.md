@@ -7,7 +7,9 @@
 
 *An open-source geospatial web application for extracting and visualizing topographic profiles from Digital Elevation Models (DEMs).*
 
-GeoProfiler enables rapid extraction and visualization of topographic **line** and **swath** profiles through a user-friendly web interface. It streamlines the extraction and visualization of topographic profiles, reducing repetitive manual processing when working with multiple profile lines and large terrain datasets.
+GeoProfiler enables rapid extraction and visualization of topographic **line** and **swath** profiles through a user-friendly web interface. 
+
+GeoProfiler streamlines the extraction and visualization of topographic profiles, reducing repetitive manual processing when working with multiple profile lines and large terrain datasets.
 
 ---
 
