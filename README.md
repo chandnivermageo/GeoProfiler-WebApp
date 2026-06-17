@@ -148,3 +148,11 @@ streamlit run app.py
 **Chandni Verma**
 
 LinkedIn: https://www.linkedin.com/in/chandni-verma-geo/
+
+---
+
+## Demo Video
+
+A short demonstration of the GeoProfiler Web App workflow.
+
+https://github.com/user-attachments/assets/31a1171c-4148-41d4-9c5c-c2cf9502f8ce
