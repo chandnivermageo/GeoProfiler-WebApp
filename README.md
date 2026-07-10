@@ -20,7 +20,7 @@ GeoProfiler streamlines the extraction and visualization of topographic profiles
 * Swath profile generation
 * Shapefile and GeoJSON support
 * Automatic vector reprojection
-* PNG, PDF, and CSV exports
+* PNG, PDF, and CSV exports with projected X and Y coordinates
 
 ---
 
@@ -83,6 +83,7 @@ GeoProfiler accepts linear features representing the profile path.
 * If the vector dataset and DEM use different coordinate reference systems, GeoProfiler automatically reprojects the vector data to match the DEM CRS.
 * DEM reprojection is not performed automatically.
 * For best results, ensure that the DEM is already provided in an appropriate projected CRS.
+* Projected X and Y coordinates are included in the CSV exports and are reported in the CRS of the uploaded DEM.
 
 ---
 
@@ -106,7 +107,7 @@ Generated profiles can be exported as:
 
 * **PNG** — high-quality image output
 * **PDF** — publication-ready vector graphics
-* **CSV** — profile data for further analysis in GIS, Excel, MATLAB, Python, or other software
+* **CSV** — profile data including distance, projected X and Y coordinates, and elevation values or swath statistics for further analysis in GIS, Excel, MATLAB, Python, or other software
 
 ---
 
