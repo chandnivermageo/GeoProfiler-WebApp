@@ -92,6 +92,7 @@ Example Profile Features:
 * If the vector dataset and DEM use different coordinate reference systems, GeoProfiler automatically reprojects the vector data to match the DEM CRS.
 * DEM reprojection is not performed automatically.
 * For best results, ensure that the DEM is already provided in an appropriate projected CRS.
+* Projected X and Y coordinates are included in the CSV exports and are reported in the coordinate reference system (CRS) of the uploaded DEM.
 
 #### Profile Types
 
@@ -111,7 +112,7 @@ Generated profiles can be exported as:
 
 * PNG — high-quality image output
 * PDF — publication-ready vector graphics
-* CSV — profile data for further analysis in GIS, Excel, MATLAB, Python, or other software
+* CSV — profile data including distance, projected X and Y coordinates, and elevation values or swath statistics for further analysis in GIS, Excel, MATLAB, Python, or other software.
 
 #### Applications
 
@@ -768,6 +769,8 @@ if dem_file:
 
                     profile_df = pd.DataFrame({
                         "Distance_km": distance_km,
+                        "X_Coordinate": [p.x for p in points],
+                        "Y_Coordinate": [p.y for p in points],
                         "Elevation_m": elev
                     })
 
@@ -1027,6 +1030,8 @@ if dem_file:
 
                     swath_df = pd.DataFrame({
                         "Distance_km": distance_km,
+                        "X_Coordinate": [p.x for p in points],
+                        "Y_Coordinate": [p.y for p in points],
                         "Min_Elevation_m": swath_min,
                         "Mean_Elevation_m": swath_mean,
                         "Max_Elevation_m": swath_max
