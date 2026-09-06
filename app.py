@@ -732,13 +732,37 @@ if dem_file:
 
                     ax2.set_title(
                         f"Topographic Line Profile – Line {idx+1}",
-                        fontsize=15
+                        fontsize=12
                     )
 
                     ax2.set_xlabel("Distance (km)")
                     ax2.set_ylabel("Elevation (m)")
 
-                    ax2.grid(False)
+                    # Grid styling
+                    ax2.grid(
+                        True,
+                        color="0.92",
+                        linewidth=1.0,
+                        linestyle="-",
+                    )
+            
+                    ax2.set_axisbelow(True)
+                    
+                    # Thin plot border
+                    for spine in ax2.spines.values():
+                        spine.set_linewidth(0.8)
+                    
+                    # Ticks on all four sides, pointing inward
+                    ax2.tick_params(
+                        direction="in",
+                        color="0.66",
+                        top=True,
+                        right=True,
+                        bottom=True,
+                        left=True,
+                        length=4,
+                        width=1.0,
+                    )
 
                     plt.tight_layout()
 
@@ -996,13 +1020,37 @@ if dem_file:
 
                     ax2.set_title(
                         f"Topographic Swath Profile – Line {idx+1}",
-                        fontsize=15
+                        fontsize=12
                     )
 
                     ax2.set_xlabel("Distance (km)")
                     ax2.set_ylabel("Elevation (m)")
 
-                    ax2.grid(False)
+                    # Grid styling
+                    ax2.grid(
+                        True,
+                        color="0.92",
+                        linewidth=1.0,
+                        linestyle="-",
+                    )
+                    
+                    ax2.set_axisbelow(True)
+                    
+                    # Thin plot border
+                    for spine in ax2.spines.values():
+                        spine.set_linewidth(0.8)
+                    
+                    # Ticks on all four sides, pointing inward
+                    ax2.tick_params(
+                        direction="in",
+                        color="0.66",
+                        top=True,
+                        right=True,
+                        bottom=True,
+                        left=True,
+                        length=4,
+                        width=1.0,
+                    )
 
                     plt.tight_layout()
 
@@ -1025,7 +1073,6 @@ if dem_file:
                         format="png",
                         dpi=300,
                         bbox_inches="tight",
-                        transparent=True
                     )
 
                     swath_df = pd.DataFrame({
